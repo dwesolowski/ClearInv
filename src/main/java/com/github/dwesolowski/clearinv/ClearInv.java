@@ -16,11 +16,13 @@ public class ClearInv extends JavaPlugin implements Listener {
     @EventHandler
     public void onPlayerJoin(PlayerJoinEvent e) {
         e.getPlayer().getInventory().clear();
+        e.getPlayer().getInventory().setArmorContents(null);
     }
 
     @EventHandler
     public void onPlayerLeave(PlayerQuitEvent e) {
         e.getPlayer().getInventory().clear();
+        e.getPlayer().getInventory().setArmorContents(null);
     }
 
     private void registerMetrics() {
