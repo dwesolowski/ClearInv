@@ -1,8 +1,10 @@
 # ClearInventory - Plugin for Bukkit | Spigot
 
+[![Software License](http://img.shields.io/badge/License-MIT-brightgreen.svg?style=flat-square)](LICENSE)
+
 Removes all items from a players inventory on join / exit
 
-#### Supported Versions: 1.11+
+#### Supported Versions: 1.13+
 
 ## Installation
 

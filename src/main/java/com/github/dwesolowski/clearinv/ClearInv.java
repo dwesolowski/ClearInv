@@ -10,6 +10,7 @@ public class ClearInv extends JavaPlugin implements Listener {
 
     public void onEnable() {
         getServer().getPluginManager().registerEvents(this, this);
+        registerMetrics();
     }
 
     @EventHandler
@@ -20,5 +21,9 @@ public class ClearInv extends JavaPlugin implements Listener {
     @EventHandler
     public void onPlayerLeave(PlayerQuitEvent e) {
         e.getPlayer().getInventory().clear();
+    }
+
+    private void registerMetrics() {
+        final MetricsLite metrics = new MetricsLite(this);
     }
 }

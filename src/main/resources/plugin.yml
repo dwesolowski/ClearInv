@@ -1,7 +1,4 @@
-name: ${name}
+name: ClearInv
 version: ${version}
-description: ${description}
-author: ${author}
-website: ${url}
-
-main: ${mainClass}
+main: com.github.dwesolowski.clearinv.ClearInv
+api-version: 1.13
