@@ -2,3 +2,23 @@ name: ClearInv
 version: ${version}
 main: com.github.dwesolowski.clearinv.ClearInv
 api-version: 1.13
+
+commands:
+  clearinv:
+    description: Clears players inventory
+    permission: clearinv.clear
+  clearinvreload:
+    description: Reloads the config file
+    permission: clearinv.reload
+# Allowed defaults are: true, false, op, not op
+# If nodes does not exist, permission defaults to op.
+permissions:
+  clearinv.clear:
+    description: Clears players inventory
+    default: op
+  clearinv.reload:
+    description: Reloads the config file
+    default: op
+  clearinv.keep:
+    description: Allows players to keep inventory
+    default: false
