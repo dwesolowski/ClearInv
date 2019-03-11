@@ -24,6 +24,7 @@ public class ClearInv extends JavaPlugin implements Listener {
             Player p = e.getPlayer();
             if (!p.hasPermission("clearinv.keep")) {
                 e.getPlayer().getInventory().clear();
+                e.getPlayer().getInventory().setArmorContents(null);
             }
         }
     }
@@ -34,6 +35,7 @@ public class ClearInv extends JavaPlugin implements Listener {
             Player p = e.getPlayer();
             if (!p.hasPermission("clearinv.keep")) {
                 e.getPlayer().getInventory().clear();
+                e.getPlayer().getInventory().setArmorContents(null);
             }
         }
     }
@@ -51,6 +53,7 @@ public class ClearInv extends JavaPlugin implements Listener {
                 return true;
             }
             p.getInventory().clear();
+            p.getInventory().setArmorContents(null);
             p.sendMessage(ChatColor.GREEN + "Your inventory has been cleared!");
         } else if (cmd.getName().equalsIgnoreCase("clearinvreload")) {
             if (!p.hasPermission("clearinv.reload")) {
